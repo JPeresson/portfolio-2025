@@ -28,10 +28,10 @@
     />
 
     <!-- <title>Vite App</title> -->
-    <script type="module" crossorigin src="/portfolio-2025/assets/index-2c1337d3.js"></script>
-    <link rel="stylesheet" href="/portfolio-2025/assets/index-ae5efcdd.css">
+    <script type="module" crossorigin src="/portfolio-2025/assets/index-2096791e.js"></script>
+    <link rel="stylesheet" href="/portfolio-2025/assets/index-e66ea7e2.css">
   </head>
-  <body class="bk-background-color">
+  <body class="bk-background-color" id="scrollto-bonjour">
     <!-- <script type="module" src="/main.js"></script> -->
 
     <!-- projet id n°0 special AXEO -->
@@ -875,10 +875,12 @@
               id="nav-black-part"
               class="golos-text-regular flex gap-32 bk-noir radius-24 color-background-color pl-24 pr-24 uppercase ft-12"
             >
-              <div>Bonjour</div>
-              <div>Projets</div>
-              <div>Design</div>
-              <div class="golos-text-medium" id="italic">Contact</div>
+              <a href="#scrollto-bonjour">Bonjour</a>
+              <a href="#scrollto-design">Design</a>
+              <a href="#scrollto-projets">Projets</a>
+              <a href="#scrollto-contact" class="golos-text-medium" id="italic"
+                >Contact</a
+              >
             </div>
           </div>
         </nav>
@@ -1653,7 +1655,7 @@
             </div>
             <!-- Photoshoot -->
 
-            <div>
+            <div id="scrollto-design">
               <div class="w-100 margin-auto sous-titre-wrapper">
                 <div
                   style="margin-top: 240px"
@@ -1888,7 +1890,10 @@
 
               <!-- Projets PRO/SCO -->
               <div>
-                <div class="w-72 margin-auto sous-titre-wrapper">
+                <div
+                  id="scrollto-projets"
+                  class="w-72 margin-auto sous-titre-wrapper"
+                >
                   <div class="sous-titre mt-part mb-part margin-auto tac">
                     Projets PRO/SCO
                   </div>
@@ -2430,8 +2435,8 @@
                   </div>
                 </div>
                 <!-- Marquee -->
-                <div></div>
               </div>
+              <div id="scrollto-contact"></div>
             </div>
           </div>
         </div>
@@ -2447,10 +2452,10 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
     <!-- <script type="module" src="./test.js"></script> -->
-    <!-- <script src="./src/p5.min.js"></script>
-    <script src="./src/background.js"></script>
-    <script src="./src/circle.js"></script>
-    <script src="./src/particle.js"></script> -->
+    <script src="./src/p5.min.js"></script>
+    
+    
+    
     <!-- ScrollSmoother requires ScrollTrigger -->
     
 
