@@ -28,8 +28,8 @@
     />
 
     <!-- <title>Vite App</title> -->
-    <script type="module" crossorigin src="/portfolio-2025/assets/index-7fc3039f.js"></script>
-    <link rel="stylesheet" href="/portfolio-2025/assets/index-572076f5.css">
+    <script type="module" crossorigin src="/portfolio-2025/assets/index-a09a2502.js"></script>
+    <link rel="stylesheet" href="/portfolio-2025/assets/index-0e798cdf.css">
   </head>
   <body class="bk-background-color" id="scrollto-bonjour">
     <!-- <script type="module" src="/main.js"></script> -->
@@ -1258,7 +1258,7 @@
             <!-- Introduction -->
             <div class="flex j-c-flex-end pr-interieur">
               <div
-                style="line-height: 125%; width: 72%"
+                style="line-height: 125%; width: 88%"
                 id="introduction"
                 class="golos-text-medium ft-32 flex flex-col mt-72 pin"
               >
@@ -1590,11 +1590,20 @@
             <!-- Objectif -->
             <!-- Photoshoot -->
             <div class="flex w-64 mt-64 margin-auto gap-32">
-              <img
-                id="photo"
-                style="height: 384px; width: auto"
-                src="./img/photo.png"
-              />
+              <div class="relative">
+                <img
+                  id="photo"
+                  style="height: 384px; width: auto"
+                  src="./img/photo.png"
+                  class="absolute"
+                />
+                <img
+                  id="photo"
+                  style="height: 384px; width: auto"
+                  src="./img/photo.png"
+                  class="absolute"
+                />
+              </div>
               <div class="flex flex-col gap-32 j-c-flex-end">
                 <div
                   style="max-width: 320px; line-height: 115%"
@@ -1721,7 +1730,11 @@
                   <div class="absolute t-64 h-0">
                     <div style="top: 0" class="line absolute"></div>
                     <div class="left-8 size-3 lol" style="position: relative">
-                      <img src="./img/carnet.png" class="w-100 img-card" />
+                      <img
+                        id="dessin"
+                        src="./img/carnet.png"
+                        class="w-100 img-card"
+                      />
 
                       <div class="top-right">
                         <div>&#60; 1er janvier</div>
