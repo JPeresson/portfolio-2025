@@ -1,8 +1,10 @@
-import CirclePath from "./circle.js";
+import p5 from "p5";
+
+// import CirclePath from "./circle.js";
 // import Particle from "./particle.js";
 
 let particles = [];
-let rayon = 240;
+let rayon = 88;
 let espace = rayon / 2;
 let x, y;
 let canvas;
@@ -15,23 +17,24 @@ let stroke = [];
 let CenterPath, YPath, XPath, Y1Path, X1Path;
 
 const sketch = (s) => {
-  class Stroke {
-    constructor() {
-      this.pos = s.createVector();
-      this.r = 1;
-    }
-
-    display() {
-      this.pos.set(mouseX, mouseY);
-      s.circle(this.pos.x, this.pos.y);
-    }
-  }
-
   function canvasResize() {
     // canvas.position(s.windowWidth / 2 - canvas_size / 2, 0);
     canvas.parent("fin");
     // https://www.youtube.com/watch?v=OIfEHD3KqCg
   }
+
+  class CirclePath {
+    constructor(r, pos) {
+      this.r = r;
+      this.pos = pos;
+    }
+
+    appear() {
+      s.noFill();
+      s.circle(this.pos.x, this.pos.y, this.r);
+    }
+  }
+
   class Particle {
     constructor(path) {
       //récupération du path pour refactoriser le code original
@@ -39,22 +42,22 @@ const sketch = (s) => {
       this.rayon = path.r;
 
       //variation des particules
-      this.size = s.random(1, 3);
-      this.rand = s.random(0.25, 0.85);
-      this.hue = Math.floor(s.random(140, 150));
+      this.size = s.random(1, 4);
+      this.rand = s.random(0.45, 0.85);
+      this.hue = Math.floor(s.random(0, 360));
 
       //disperion du départ -> distance par rapport au cercle
-      this.diff = path.r / 4 + 5;
+      this.diff = path.r / 2;
       this.dist = s.createVector(
         s.random(path.pos.x - this.diff, path.pos.x + this.diff),
         s.random(path.pos.y - this.diff, path.pos.y + this.diff)
       );
 
       // répartition le long de la sphère -> effet inverse avec le starter
-      this.rep = 50;
+      this.rep = 100;
       this.starter = s.random(-this.rep, this.rep);
 
-      this.form = s.random(1, 1.25); //vitesse de formation
+      this.form = s.random(0.01, 0.02); //Distorsion du path originale, frétillements
 
       //mouvement
       this.pos = s.createVector(this.dist.x, this.dist.y);
@@ -68,8 +71,9 @@ const sketch = (s) => {
 
     update() {
       //test inversion de sens
-      let constraint = 25; //vitss mapping
+      let constraint = 5; //vitss mapping
       let mousePosX = s.map(s.mouseX, constraint, s.width - constraint, -1, 1);
+
       // let mousePosY = map(mouseY, constraint, height-constraint, 1, -1);
 
       let amplitude = this.rayon / 2;
@@ -86,7 +90,7 @@ const sketch = (s) => {
       this.pos.add(this.dist); //pos random de base à apply à la rotation
 
       this.vel.add(this.acc); //forme, attraction vers le cerlce
-      this.vel.limit(100);
+      // this.vel.limit(60);
       this.acc.mult(0); //clean
     }
 
@@ -95,50 +99,29 @@ const sketch = (s) => {
       let dir = p5.Vector.sub(this.path.pos, this.pos);
       dir.normalize(); //échelle 1:1
       dir.mult(s.random(this.form)); //vitesse de formation
-      //Attire les particules
+
       this.acc.add(dir);
     }
 
-    link(points) {
-      for (let other of points) {
-        let d = dist(this.pos.x, this.pos.y, other.pos.x, other.pos.y);
-        if (d < 15) {
-          s.stroke(245);
-          s.strokeWeight(map(d, 0, 150, 0.4, 0));
-          s.line(this.pos.x, this.pos.y, other.pos.x, other.pos.y);
-        }
-      }
-    }
-
-    display() {
+    appear() {
       s.noStroke();
       s.fill(s.color(`hsla(${this.hue}, 24%, 50%, ${this.rand})`));
       s.circle(this.pos.x, this.pos.y, this.size);
     }
-
-    projection() {
-      //première piste (projection sur le texte)
-      //permet de projeter le point sur le cercle objectif de le rejoindre
-      s.fill("red");
-      this.project = this.path.pos.copy();
-      let dir = p5.Vector.sub(this.pos, this.project);
-      // let mouse = createVector(mouseX, mouseY);
-      // let dir = p5.Vector.sub(mouse, this.project);
-      dir.normalize();
-      dir.mult(this.path.r / 2);
-      this.project.add(dir);
-
-      s.fill("red");
-      // circle(this.project.x,this.project.y,10);
-      // noFill();
-      // circle(this.project.x, this.project.y, path.r);
-
-      // p5.Vector.dist(this.pos, this.project)
-    }
   }
 
+  s.touchStarted = () => {
+    // Paint over the background.
+    background(200);
+
+    // Mark each touch point once with a circle.
+    for (let touch of touches) {
+      circle(touch.x, touch.y, 40);
+    }
+  };
+
   s.setup = () => {
-    canvas = s.createCanvas(canvas_size, 700);
+    canvas = s.createCanvas(canvas_size, 848);
     canvasResize();
     x = s.width / 2;
     y = s.height / 2;
@@ -149,12 +132,9 @@ const sketch = (s) => {
     Y1Path = new CirclePath(rayon, s.createVector(x, y + espace));
     X1Path = new CirclePath(rayon, s.createVector(x - espace, y));
 
-    canvas.push;
-    // console.log(CenterPath);
     particles.push(new Particle(CenterPath));
-    // console.log(particles);
 
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 24; i++) {
       particles.push(new Particle(CenterPath));
       particles.push(new Particle(YPath));
       particles.push(new Particle(Y1Path));
@@ -163,34 +143,42 @@ const sketch = (s) => {
     }
 
     let NewPath = new CirclePath(rayon * 2, s.createVector(x, y));
-    for (let i = 0; i < 200; i++) {
+    for (let i = 0; i < 16; i++) {
       particles.push(new Particle(NewPath));
     }
   };
 
   s.draw = () => {
-    // s.background(250, 246, 237);
-    s.background(250, 246, 237, 0);
     s.background("#e2e2e2");
-    // background("#111111");
+
     particles.forEach((particle) => {
-      particle.display();
+      particle.appear();
       particle.applyForce();
       particle.update();
-      // particle.link(particles);
     });
   };
 
   s.windowResized = () => {
     canvasResize();
-    // canvas.position(s.width - canvas_size, 0);
-    // x = s.width / 2;
-    // y = s.height / 2;
-    // particles.forEach((particle) => {
-    //   particle.applyMiddle();
-    //   // particle.link(particles);
-    // });
   };
+  const section_finale = document.querySelector("#meContacter");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          s.loop();
+          // alert("loop");
+        } else {
+          s.noLoop();
+          // alert("noloop");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer.observe(section_finale);
 };
 
 const sketch_A = new p5(sketch, "one");
+const sketch_B = new p5(sketch, "two");

@@ -256,7 +256,7 @@
 }
 
 .bk-noir {
-  background-color: var(--blck);
+  background-color: #170404;
 }
 
 .ft-96 {
@@ -574,13 +574,17 @@
 .mb-part {
   margin-bottom: 72px;
 }
+
+.height-project {
+  height: 48px;
+}
 #skills {
   margin-top: 360px;
 }
 .projet {
-  width: 344px;
+  width: 100%;
   border: solid 1px #a9a9a9;
-  border-radius: 24px;
+  border-radius: 8px;
   font-family: "Judson", serif;
   font-weight: 700;
   font-style: normal;
@@ -589,17 +593,18 @@
   line-height: 110%;
   padding: 8px 8px 24px 16px;
   transition: 0.4s;
+  height: 104px;
 }
 
 .projet .header {
-  font-family: "Golos Text", sans-serif;
+  font-family: "Judson", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   color: var(--color-gris);
   letter-spacing: 0px;
   margin-bottom: 96px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .project-title {
@@ -775,17 +780,17 @@ video::-webkit-media-controls-current-time-display {
   width: 100px;
 }
 
-#other-drawin:hover {
+/* #other-drawin:hover {
   content: url("./img/museeartquimper.png");
-}
+} */
 /* #croquis:hover {
   content: url("./img/distribution.png");
 } */
 
 #meContacter {
   margin: auto;
-  margin-top: 180px;
-  width: 360px;
+  margin-top: 104px;
+  width: 559px;
   /* border: solid var(--background-color) 1px; */
   text-align: center;
   font-size: 32px;
@@ -801,6 +806,7 @@ video::-webkit-media-controls-current-time-display {
 #nav-black-part {
   padding: 6px 24px;
   letter-spacing: 1px;
+  background-color: #1d0101;
 }
 
 #nav {
@@ -822,7 +828,9 @@ video::-webkit-media-controls-current-time-display {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 } */
-
+.left {
+  left: 0;
+}
 .a {
   color: #0e0e0e !important ;
 }
@@ -834,12 +842,21 @@ video::-webkit-media-controls-current-time-display {
   stroke: #1f1f1f;
 }
 
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+
 #arrow-left path {
   stroke: #1f1f1f;
 }
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.croix {
+  cursor: pointer;
 }
 
 #fermer {
@@ -851,4 +868,26 @@ video::-webkit-media-controls-current-time-display {
 
 .projet:hover {
   border: 1px black solid;
+}
+
+.projet {
+  cursor: pointer;
+}
+
+nav a {
+  color: var(--background-color0);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--background-color0);
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.marquee svg,
+.marquee-reverse svg {
+  stroke: #0b0000 !important;
 }
