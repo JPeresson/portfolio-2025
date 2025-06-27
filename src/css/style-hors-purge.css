@@ -26,3 +26,9 @@
     display: none !important;
   }
 }
+
+#bottom-work {
+  color: var(--blck);
+  position: absolute;
+  bottom: 111px;
+}
