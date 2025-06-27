@@ -1,0 +1,28 @@
+.p5Canvas {
+  margin: auto;
+  /* margin: 0; */
+  position: absolute;
+  width: 800px !important;
+  height: auto !important;
+  top: -720px;
+  z-index: -1;
+}
+
+.saturate {
+  filter: saturate(1) !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .p5Canvas {
+    position: relative;
+    margin: auto;
+    margin: 0;
+    width: 480px !important;
+    height: auto !important;
+    top: -540px;
+  }
+
+  .p5Canvas:first-of-type {
+    display: none !important;
+  }
+}
