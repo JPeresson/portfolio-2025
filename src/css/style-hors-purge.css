@@ -32,3 +32,21 @@
   position: absolute;
   bottom: 111px;
 }
+
+@keyframes move_marquee {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes move_marquee_left_to_right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
