@@ -28,10 +28,10 @@ projet_showroom.forEach((projet_wrapper) => {
 });
 
 project_wrapper_unique.addEventListener("mouseleave", () => {
-  timelines.forEach((element) => {
-    element.pause(0);
-  });
   gsap.to(TOOKI_PAIRES, { opacity: 0, duration: 0.3 });
+  // timelines.forEach((element) => {
+  //   element.pause(0);
+  // });
 });
 
 // project_wrapper_unique.addEventListener("mouseleave", () => {
@@ -42,34 +42,43 @@ project_wrapper_unique.addEventListener("mouseleave", () => {
 
 project_wrap.forEach((projet, array_pos) => {
   projet.addEventListener("mouseenter", () => {
-    const prior = gsap.timeline().to(TOOKI_PAIRES[array_pos], {
+    const prior = gsap.timeline({ paused: true }).to(TOOKI_PAIRES[array_pos], {
       opacity: opacity[0],
       duration: 0.4,
       filter: "grayscale(0%)",
     });
+    prior.play(0);
     timelines.push(prior);
     if (TOOKI_PAIRES[array_pos - 1]) {
-      const prior_2 = gsap.timeline().to(TOOKI_PAIRES[array_pos - 1], {
-        opacity: opacity[1],
-        duration: 0.4,
-        filter: "grayscale(50%)",
-      });
-
+      const prior_2 = gsap
+        .timeline({ paused: true })
+        .to(TOOKI_PAIRES[array_pos - 1], {
+          opacity: opacity[1],
+          duration: 0.4,
+          filter: "grayscale(50%)",
+        });
+      prior_2.play(0);
       timelines.push(prior_2);
       if (TOOKI_PAIRES[array_pos - 2]) {
-        const prior_3 = gsap.timeline().to(TOOKI_PAIRES[array_pos - 2], {
-          opacity: opacity[2],
-          duration: 0.4,
-          filter: "grayscale(80.5%)",
-        });
+        const prior_3 = gsap
+          .timeline({ paused: true })
+          .to(TOOKI_PAIRES[array_pos - 2], {
+            opacity: opacity[2],
+            duration: 0.4,
+            filter: "grayscale(80.5%)",
+          });
+        prior_3.play(0);
         timelines.push(prior_3);
         if (TOOKI_PAIRES[array_pos - 3]) {
-          const prior_4 = gsap.timeline().to(TOOKI_PAIRES[array_pos - 3], {
-            opacity: opacity[3],
-            duration: 0.4,
-            filter: "grayscale(100%)",
-          });
+          const prior_4 = gsap
+            .timeline({ paused: true })
+            .to(TOOKI_PAIRES[array_pos - 3], {
+              opacity: opacity[3],
+              duration: 0.4,
+              filter: "grayscale(100%)",
+            });
           timelines.push(prior_4);
+          prior_4.play(0);
         }
       }
     } //remplacer par map

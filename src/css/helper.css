@@ -789,7 +789,14 @@ nav a:hover {
 #info-dog {
   width: 84.5%;
   margin: auto;
-  margin-top: 80px;
+}
+
+#projet-wrapper {
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+
+  margin-top: 32px;
+  padding-top: 32px;
 }
 
 @media only screen and (min-width: 1600px) {
