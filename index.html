@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Golos+Text&family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -31,96 +32,68 @@
     />
 
     <!-- <title>Vite App</title> -->
-    <script type="module" crossorigin src="/portfolio-2025/assets/index-a72f0175.js"></script>
-    <link rel="stylesheet" href="/portfolio-2025/assets/index-084ccf90.css">
+    <script type="module" crossorigin src="/portfolio-2025/assets/index-5d4cafca.js"></script>
+    <link rel="stylesheet" href="/portfolio-2025/assets/index-8fc72d62.css">
   </head>
   <body class="bk-background-color" id="scrollto-bonjour">
     <!-- <script type="module" src="/main.js"></script> -->
-
-    <!-- projet id n°0 special AXEO -->
-
     <div
-      id="fond-projet"
-      style="z-index: 99; overflow-y: scroll; opacity: 0; display: none"
-      class="fixed vw-100 vh-100 projets top display-none"
+      style="
+        z-index: 1000000;
+        background-color: #110000;
+        color: var(--background-color);
+      "
+      id="mail_copie"
+      class="w-100 fixed pt-8 pb-8 pl-16 flex"
     >
-      <div
-        style="z-index: 10000; background-color: var(--blck); margin: auto"
-        class="noir-fond w-80 h-100 relative mt-24 flex flex-col txt-popup"
-      ></div>
-      <div
-        style="z-index: 10"
-        class="flex w-100 absolute h-100 center vertical-center top"
-      >
-        <div style="width: 94%" class="flex space-between margin-auto hidden">
-          <svg
-            class="arrow-left"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1.06445"
-              y="0.923828"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
-
-          <svg
-            class="arrow-right"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              transform="matrix(-1 0 0 1 51.4316 0.423828)"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M12.8672 27.5562H40.0664M40.0664 27.5562L30.0668 17.5566M40.0664 27.5562L30.6 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
+      <div class="margin-auto flex gap-32">
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 16.75C11.8019 16.7474 11.6126 16.6676 11.4725 16.5275C11.3324 16.3874 11.2526 16.1981 11.25 16V11C11.25 10.8011 11.329 10.6103 11.4697 10.4697C11.6103 10.329 11.8011 10.25 12 10.25C12.1989 10.25 12.3897 10.329 12.5303 10.4697C12.671 10.6103 12.75 10.8011 12.75 11V16C12.7474 16.1981 12.6676 16.3874 12.5275 16.5275C12.3874 16.6676 12.1981 16.7474 12 16.75Z"
+            fill="#F9F9F9"
+          />
+          <path
+            d="M12 9.25C11.8019 9.24741 11.6126 9.16756 11.4725 9.02747C11.3324 8.88737 11.2526 8.69811 11.25 8.5V8C11.25 7.80109 11.329 7.61032 11.4697 7.46967C11.6103 7.32902 11.8011 7.25 12 7.25C12.1989 7.25 12.3897 7.32902 12.5303 7.46967C12.671 7.61032 12.75 7.80109 12.75 8V8.5C12.7474 8.69811 12.6676 8.88737 12.5275 9.02747C12.3874 9.16756 12.1981 9.24741 12 9.25Z"
+            fill="#F9F9F9"
+          />
+          <path
+            d="M12 21C10.22 21 8.47991 20.4722 6.99987 19.4832C5.51983 18.4943 4.36628 17.0887 3.68509 15.4442C3.0039 13.7996 2.82567 11.99 3.17294 10.2442C3.5202 8.49836 4.37737 6.89472 5.63604 5.63604C6.89472 4.37737 8.49836 3.5202 10.2442 3.17294C11.99 2.82567 13.7996 3.0039 15.4442 3.68509C17.0887 4.36628 18.4943 5.51983 19.4832 6.99987C20.4722 8.47991 21 10.22 21 12C21 14.387 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.387 21 12 21ZM12 4.5C10.5166 4.5 9.0666 4.93987 7.83323 5.76398C6.59986 6.58809 5.63856 7.75943 5.07091 9.12988C4.50325 10.5003 4.35473 12.0083 4.64411 13.4632C4.9335 14.918 5.64781 16.2544 6.6967 17.3033C7.7456 18.3522 9.08197 19.0665 10.5368 19.3559C11.9917 19.6453 13.4997 19.4968 14.8701 18.9291C16.2406 18.3614 17.4119 17.4001 18.236 16.1668C19.0601 14.9334 19.5 13.4834 19.5 12C19.5 10.0109 18.7098 8.10323 17.3033 6.6967C15.8968 5.29018 13.9891 4.5 12 4.5Z"
+            fill="#F9F9F9"
+          />
+        </svg>
+        <div class="">
+          Merci d'avoir copié mon mail ! <span class="pl-24">🎉🎉🎉 </span>
         </div>
       </div>
     </div>
+    <!-- projet id n°0 special AXEO -->
+
     <div
       id="projet-0"
       style="z-index: 100; overflow-y: scroll"
       class="fixed vw-100 vh-100 projets top display-none"
     >
       <div
-        style="z-index: 10000; background-color: var(--blck); margin: auto"
-        class="croix-width w-80 h-100 relative mt-24 flex flex-col txt-popup"
+        style="
+          z-index: 10000;
+          background-color: var(--background-color);
+          margin: auto;
+          box-shadow: 0px 0px 440px 300px #323232b5;
+        "
+        class="fond-projet-full-mobile croix-width w-88 h-100 relative mt-24 flex flex-col txt-popup"
       >
-        <div style="overflow-y: auto" class="w-96 margin-auto h-100">
-          <div class="w-100 flex j-c-flex-end mt-24 mb-32">
+        <div id="lol" style="overflow-y: auto" class="w-96 margin-auto h-100">
+          <div class="w-100 flex j-c-flex-end mt-24 mb-24">
             <svg
               class="croix"
-              width="17"
-              height="17"
+              width="24"
+              height="24"
               viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -130,138 +103,82 @@
                 y1="16.5918"
                 x2="1.18336"
                 y2="1.18343"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
               <line
                 y1="-0.5"
                 x2="21.7908"
                 y2="-0.5"
                 transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.617188 16.2383)"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
             </svg>
           </div>
           <div
-            class="mobile-flex-ml-0 flex space-between a-i-flex-end mb-32 ml-32 mr-32"
+            class="mobile-flex-ml-0 flex space-between a-i-flex-end ml-32 mr-32"
           >
-            <div class="title-project ft-40 judson-bold">
+            <div class="title-project ft-48 golos-text-bold">
               Web app : Crm AXEO Services à Quimperlé
             </div>
 
             <div
               class="flash-info"
               class="b612-mono-regular vertical-center"
-              style="position: relative; top: 0px"
+              style="position: relative; top: 48px; left: -24px"
             >
               <span> Désolée, le lien vers le site </span>
               <span>n'est pas encore disponible</span>
-              <span>Cela arrivera très prochainement </span>
             </div>
           </div>
-          <div id="crm-original" class="hidden border-radius-popup">
+          <div
+            id="crm-original"
+            style="box-shadow: #9696964d 0px 0px 35px 0px"
+            class="w-96 margin-auto hidden border-radius-popup mt-88"
+          >
             <img class="w-100" src="./img/frame-surprise.png" />
           </div>
-          <div class="mt-24 mb-24 w-96 margin-auto">
-            La création de cette interface fait suite à une toute première
-            réflexion sur ce qu'est un crm pour une entreprise aussi créative
-            qu'AXEO Services QUIMPERLE. "Grands gamers" tout en étant dans
-            l'attente d'avoir accès rapidement aux outils du service à la
-            personne, j'ai conçu ce design en amont...
+
+          <div class="mt-88 mb-32 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span> La
+            toute première fois que je me suis penchée sur le
+            <span class="font-bold">"crm" </span>fut avec cette UI destinée à
+            mettre en lumière les
+            <span class="font-bold"> traditionnelles tâches répétitives </span>
+            et la
+            <span class="font-bold">
+              multitude de canaux des plateformes externalisées</span
+            >
+            propres au <span class="font-bold"> Service à la Personne</span>.
+            Pour cette entreprise aussi créative dans son approche managériale
+            (binômes d'équipe pour le <span class="font-bold"> ménage </span> et
+            chantiers <span class="font-bold"> "vitres" </span> conviviaux) que
+            dans ses heures de <span class="font-bold"> bureau</span>, voici à
+            quoi aurait pu ressembler le substitut de
+            <a
+              style="opacity: 0.8; text-decoration: underline"
+              href="https://www.google.com/search?sca_esv=0fb92921c9ed4e8e&sxsrf=AE3TifNV-zYAXi709xj28nwnFXEZLobc9w:1751005108001&q=XIMI+XELYA+Image&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQ_pbg5bWizQs3A_kIenjtclZaCWQ2yYVOWcnHYc_MHE3VnMBj8K458S1BAxtYKJxjLa2kYTnlDkFTt9nTXlL9il-EN58TB1MKsQ8nxLY13gULC7MIKiL-QL0du6lsCFFw9W4S4FBTQ9kwLBOTa_w8LJ-PnYDzyraoEwl-sTykQg3Vx3gu&sa=X&ved=2ahUKEwjFm9mr-pCOAxWGKvsDHZ8UEygQtKgLKAF6BAgTEAE&biw=1536&bih=695&dpr=1.25#vhid=2QM-JlhZ6H9WAM&vssid=mosaic"
+              >Ximi</a
+            >, imposé jusqu'à aujourd'hui par la franchise.
           </div>
-          <div style="width: 100%" class="mt-48">
-            <div class="mobile-flex-col flex space-between mb-64 margin-auto">
-              <div class="mobile-outils flex gap-56 nowrap">
-                <div>Outils "numériques"</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Figma
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Illustrator
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> GSAP
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-56 nowrap">
-                <div>Méthodologie</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span>
-                    Ethnographie
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Tests
-                    utilisateurs
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Test des 5
-                    sec.
-                  </div>
-                </div>
-              </div>
+          <div class="mb-40 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span> La
+            L'UI/UX se caractérise par la présence d'une
+            <span class="font-bold">database </span>sophistiquée permettant de
+            jongler entre <span class="font-bold"> priorisation</span> et
+            <span class="font-bold"> son propre emploi </span>du temps, souvent
+            chargé.
+            <span class="font-bold"> </span>
+          </div>
+
+          <div class="w-100 flex j-c-flex-end">
+            <div class="croix merci">
+              Merci ! (vous pouvez fermer par là aussi)
             </div>
           </div>
+          <div style="width: 100%" class="mt-96"></div>
         </div>
       </div>
-      <div
-        style="z-index: 10"
-        class="flex w-100 absolute h-100 center vertical-center top"
-      >
-        <div style="width: 94%" class="flex space-between margin-auto hidden">
-          <svg
-            class="arrow-left"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1.06445"
-              y="0.923828"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
 
-          <svg
-            class="arrow-right"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              transform="matrix(-1 0 0 1 51.4316 0.423828)"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M12.8672 27.5562H40.0664M40.0664 27.5562L30.0668 17.5566M40.0664 27.5562L30.6 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
-        </div>
-      </div>
       <div
         style="opacity: 0.25; top: 0px; z-index: -1"
         class="w-100 h-100 absolute"
@@ -270,21 +187,27 @@
     <!-- projet id n°0 special AXEO  -->
 
     <!-- projet id n°3 AXEO  -->
+
     <div
       id="projet-3"
       style="z-index: 100; overflow-y: scroll"
       class="fixed vw-100 vh-100 projets top display-none"
     >
       <div
-        style="z-index: 10000; background-color: var(--blck); margin: auto"
-        class="w-100 h-100 relative mt-24 flex flex-col txt-popup"
+        style="
+          z-index: 10000;
+          background-color: var(--background-color);
+          margin: auto;
+          box-shadow: 0px 0px 440px 300px #323232b5;
+        "
+        class="fond-projet-full-mobile croix-width w-88 h-100 relative mt-24 flex flex-col txt-popup"
       >
-        <div style="overflow-y: auto" class="w-96 margin-auto h-100">
-          <div class="w-100 flex j-c-flex-end mt-24 mb-32">
+        <div id="lol" style="overflow-y: auto" class="w-96 margin-auto h-100">
+          <div class="w-100 flex j-c-flex-end mt-24 mb-24">
             <svg
               class="croix"
-              width="17"
-              height="17"
+              width="24"
+              height="24"
               viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -294,147 +217,75 @@
                 y1="16.5918"
                 x2="1.18336"
                 y2="1.18343"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
               <line
                 y1="-0.5"
                 x2="21.7908"
                 y2="-0.5"
                 transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.617188 16.2383)"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
             </svg>
           </div>
           <div
-            class="mobile-flex-ml-0 flex space-between a-i-flex-end mb-32 ml-32 mr-32"
+            class="mobile-flex-ml-0 flex space-between a-i-flex-end ml-32 mr-32"
           >
-            <div class="title-project ft-40 judson-bold">
-              AXEO : Projet Final
+            <div class="title-project ft-48 golos-text-bold">
+              AXEO Quimperlé CRM, une version approuvée en cours de livraison
             </div>
 
             <div
               class="flash-info"
               class="b612-mono-regular vertical-center"
-              style="position: relative; top: 0px"
+              style="position: relative; top: 48px; left: -24px"
             >
               <span> Désolée, le lien vers le site </span>
               <span>n'est pas encore disponible</span>
-              <span>Cela arrivera très prochainement </span>
-              <span>(avec la responsivité)</span>
             </div>
           </div>
-          <img class="w-100 border-radius-popup" src="./img/axeo.png" />
-          <div class="flex gap-24 space-between w-100 mt-24">
-            <div class="w-50 border-radius-popup">
-              <img class="w-100 border-radius-popup" src="./img/planner.png" />
-            </div>
-            <div class="w-50 border-radius-popup hidden">
-              <img class="w-100 border-radius-popup" src="./img/calcul.png" />
-            </div>
-          </div>
-          <div class="mt-24 mb-24 w-96 margin-auto">
-            Cette fois-ci, je propose une application qui a l'intention de voir
-            le jour auprès de mon actuelle agence (en apprentissage). Il s'agit
-            d'un CRM pour AXEO Services Quimperlé achevé sous les traits
-            exotiques de l'accueil et chaleureux ses intervenants en SAP
-          </div>
-          <div style="width: 100%" class="mt-48">
-            <div class="mobile-flex-col flex space-between mb-64 margin-auto">
-              <div class="mobile-outils flex gap-56 nowrap">
-                <div>Outils "numériques"</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Figma
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Microsoft
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Blender
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-56 nowrap">
-                <div>Méthodologie</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> UX Maps
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span>
-                    Rapports/Oraux
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Etudes de
-                    terrain
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        style="z-index: 10"
-        class="flex w-100 absolute h-100 center vertical-center top"
-      >
-        <div style="width: 94%" class="flex space-between margin-auto hidden">
-          <!-- <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
- <rect x="1.06445" y="0.923828" width="51.4316" height="51.4316" rx="25.7158" fill="#E9E9E9" stroke="#E9E9E9"/>
- <path d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226" stroke="#1F1F1F" stroke-width="1.6"/>
- </svg> -->
-          <svg
-            class="arrow-left"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            style="box-shadow: #9696964d 0px 0px 35px 0px"
+            class="w-96 margin-auto hidden border-radius-popup mt-88"
           >
-            <rect
-              x="1.06445"
-              y="0.923828"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
+            <img class="height-first" src="./img/axeo.png" />
+          </div>
 
-          <svg
-            class="arrow-right"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              transform="matrix(-1 0 0 1 51.4316 0.423828)"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M12.8672 27.5562H40.0664M40.0664 27.5562L30.0668 17.5566M40.0664 27.5562L30.6 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
+          <div class="mt-88 mb-32 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span>
+            Cette dernière version du
+            <span class="font-bold"> CRM d'AXEO Services Quimperlé </span>est en
+            cours de <span class="font-bold"> développement </span>pour ma part.
+            Entre les tests de responsivité et la génération de devis
+            automatisée, je deviens une
+            <span class="font-bold"> experte React</span> lentement mais
+            sûrement. Les clients sont accompagnés de leur fiche technique
+            <span class="font-bold"> visible en un coup d'œil ... </span> Ce qui
+            a fait de l'application <span class="font-bold"> le projet </span>le
+            plus attendu de l'agence.
+          </div>
+          <div class="mb-40 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span>
+
+            <span class="font-bold"> </span>
+            Un <span class="font-bold"> grand merci </span> à toute mon
+            <span class="font-bold">équipe AXEO</span>, à leur
+            <span class="font-bold">soutien </span>et à leur générosité, leur
+            <span class="font-bold">partage </span>de connaissances de
+            <span class="font-bold">la recherche </span>(méthodes de gestion), à
+            <span class="font-bold">l'idéation</span> du projet, en passant par
+            ses <span class="font-bold"> tests utilisateurs</span>.
+          </div>
+
+          <div class="w-100 flex j-c-flex-end">
+            <div class="croix merci">
+              Merci ! (vous pouvez fermer par là aussi)
+            </div>
+          </div>
+          <div style="width: 100%" class="mt-96"></div>
         </div>
       </div>
+
       <div
         style="opacity: 0.25; top: 0px; z-index: -1"
         class="w-100 h-100 absolute"
@@ -449,15 +300,20 @@
       class="fixed vw-100 vh-100 projets top display-none"
     >
       <div
-        style="z-index: 10000; background-color: var(--blck); margin: auto"
-        class="croix-width w-100 h-100 relative mt-24 flex flex-col txt-popup"
+        style="
+          z-index: 10000;
+          background-color: var(--background-color);
+          margin: auto;
+          box-shadow: 0px 0px 440px 300px #323232b5;
+        "
+        class="fond-projet-full-mobile croix-width w-88 h-100 relative mt-24 flex flex-col txt-popup"
       >
-        <div style="overflow-y: auto" class="w-96 margin-auto h-100">
-          <div class="w-100 flex j-c-flex-end mt-24 mb-32">
+        <div id="lol" style="overflow-y: auto" class="w-96 margin-auto h-100">
+          <div class="w-100 flex j-c-flex-end mt-24 mb-24">
             <svg
               class="croix"
-              width="17"
-              height="17"
+              width="24"
+              height="24"
               viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -467,158 +323,92 @@
                 y1="16.5918"
                 x2="1.18336"
                 y2="1.18343"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
               <line
                 y1="-0.5"
                 x2="21.7908"
                 y2="-0.5"
                 transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.617188 16.2383)"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
             </svg>
           </div>
           <div
-            class="mobile-flex-ml-0 flex space-between a-i-flex-end mb-32 ml-32 mr-32"
+            class="mobile-flex-ml-0 flex space-between a-i-flex-end ml-32 mr-32"
           >
-            <div class="title-project ft-40 judson-bold">
-              L'application "Prille" (Développement Wordpress)
+            <div class="title-project ft-48 golos-text-bold">
+              Prille, une Web-App développée sur Wordpress
             </div>
 
             <div
               class="flash-info"
               class="b612-mono-regular vertical-center"
-              style="position: relative; top: 0px"
+              style="position: relative; top: 48px; left: -24px"
             >
               <span> Désolée, le lien vers le site </span>
               <span>n'est pas encore disponible</span>
-              <span>Cela arrivera très prochainement </span>
-              <span>(avec la responsivité)</span>
             </div>
           </div>
-          <img class="w-100 border-radius-popup" src="./img/read.png" />
-          <div class="flex gap-16 space-between w-100 mt-24">
-            <!-- <div class="w-96 space-between"> -->
-            <img
-              style="width: 32%"
-              class="w-100 border-radius-popup"
-              src="./img/decouverte.png"
-            />
-
-            <img
-              style="width: 32%"
-              class="w-100 border-radius-popup"
-              src="./img/find.png"
-            />
-
-            <img
-              style="width: 32%"
-              class="w-100 border-radius-popup"
-              src="./img/parole.png"
-            />
+          <div
+            id="prille_img"
+            style="box-shadow: #9696964d 0px 0px 35px 0px"
+            class="w-96 margin-auto hidden border-radius-popup mt-88"
+          >
+            <img class="w-100 border-radius-popup" src="./img/read.png" />
           </div>
-          <!-- </div> -->
-          <div class="mt-24 mb-24 w-96 margin-auto">
-            Une autre interface pour mes chers fidèles. Je ne suis pas pour
-            promouvoir le catholicisme, mais il fallait bien commencer quelque
-            part ! A l'unaminité, les fidèles étaient tous très enjoués à l'idée
-            de partager leur prières entre eux. A cela, ils ont vu une
-            opportunité de "mieux s'organiser" pour de bon sur les chants du
-            soir.
+
+          <div class="mt-88 mb-32 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span> La
+            création de cette interface s'est menée en étroite
+            <span class="font-bold"> collaboration</span>
+            avec les
+            <span class="font-bold"> catéchumènes </span>
+            . Pourquoi ? Parce que la communauté religieuse estimait que
+            beaucoup de leur système d'organisation était à revoir. Avec force
+            de proposition, je me suis dit qu'
+            <span class="font-bold">
+              apporter un peu de mon aide serait bénéfique autant pour eux que
+              pour moi.</span
+            >
+            A fin d'échanger leurs prières "numériquement", j'ai donc mis au
+            point une application légère et moderne proche de
+            <a
+              style="opacity: 0.6; text-decoration: underline"
+              href="https://youcat.org/fr/produits/youcat-2/"
+            >
+              Yucat</a
+            >, un livre servant de petit guide pour les nouveaux fidèles. Un
+            regard plus neutre mais en maintenant la sensibilité reherchée a
+            permis d'aboutir à ce résultat qui décortique et affine les vers de
+            chaque prière selon les contributeurs (Wordpress).
           </div>
-          <div style="width: 100%" class="mt-48">
-            <div class="mobile-flex-col flex space-between mb-64 margin-auto">
-              <div class="mobile-outils flex gap-56 nowrap">
-                <div>Outils "numériques"</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Wordpress
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> CSS/HTML
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Figma
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-56 nowrap">
-                <div>Méthodologie</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Entretiens
-                    qualitatifs
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> UX Maps
-                  </div>
-                </div>
-              </div>
+          <div class="mb-40 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span> Les
+            diverses représentations de la prières doivent être en
+            correspondance avec la célébration du jour et parfois du cours
+            retranscrit en "lorem ipsum". Le travail de fond consiste à
+            comprendre les usagers directs/indirects, leurs potentiels
+            utilisations de l'outil et de le proposer au plus grand
+            nombre.Wordpress, ma capacité à m'adapter à du LowCode au
+            développement de thèmes m'a permis d'expérimenter la génération de
+            prières "similaires" à chacune avec des tags, de la
+            personnalisation, jusqu'à la colorimétrie qui reste en second plan
+            du texte. Une belle aventure pour créer des interfaces en tant
+            qu'amatrice qui devait bien commencer là où il y avait un besoin
+            "utilisateur".
+            <span class="font-bold"> </span>
+          </div>
+
+          <div class="w-100 flex j-c-flex-end">
+            <div class="croix merci">
+              Merci ! (vous pouvez fermer par là aussi)
             </div>
           </div>
+          <div style="width: 100%" class="mt-96"></div>
         </div>
       </div>
-      <div
-        style="z-index: 10"
-        class="flex w-100 absolute h-100 center vertical-center top"
-      >
-        <div style="width: 94%" class="flex space-between margin-auto hidden">
-          <!-- <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
- <rect x="1.06445" y="0.923828" width="51.4316" height="51.4316" rx="25.7158" fill="#E9E9E9" stroke="#E9E9E9"/>
- <path d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226" stroke="#1F1F1F" stroke-width="1.6"/>
- </svg> -->
-          <svg
-            class="arrow-left"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1.06445"
-              y="0.923828"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
 
-          <svg
-            class="arrow-right"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              transform="matrix(-1 0 0 1 51.4316 0.423828)"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M12.8672 27.5562H40.0664M40.0664 27.5562L30.0668 17.5566M40.0664 27.5562L30.6 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
-        </div>
-      </div>
       <div
         style="opacity: 0.25; top: 0px; z-index: -1"
         class="w-100 h-100 absolute"
@@ -633,15 +423,20 @@
       class="fixed vw-100 vh-100 projets top display-none"
     >
       <div
-        style="z-index: 10000; background-color: var(--blck); margin: auto"
-        class="croix-width w-80 h-100 relative mt-24 flex flex-col txt-popup"
+        style="
+          z-index: 10000;
+          background-color: var(--background-color);
+          margin: auto;
+          box-shadow: 0px 0px 440px 300px #323232b5;
+        "
+        class="fond-projet-full-mobile croix-width w-88 h-100 relative mt-24 flex flex-col txt-popup"
       >
-        <div style="overflow-y: auto" class="w-96 margin-auto h-100">
-          <div class="w-100 flex j-c-flex-end mt-24 mb-32">
+        <div id="lol" style="overflow-y: auto" class="w-96 margin-auto h-100">
+          <div class="w-100 flex j-c-flex-end mt-24 mb-24">
             <svg
               class="croix"
-              width="17"
-              height="17"
+              width="24"
+              height="24"
               viewBox="0 0 17 17"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -651,153 +446,74 @@
                 y1="16.5918"
                 x2="1.18336"
                 y2="1.18343"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
               <line
                 y1="-0.5"
                 x2="21.7908"
                 y2="-0.5"
                 transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 0.617188 16.2383)"
-                stroke="#F3F3F3"
+                stroke="#100000"
               />
             </svg>
           </div>
           <div
-            class="mobile-flex-ml-0 flex space-between a-i-flex-end mb-32 ml-32 mr-32"
+            class="mobile-flex-ml-0 flex space-between a-i-flex-end ml-32 mr-32"
           >
-            <div class="title-project ft-40 judson-bold">
-              Site internet pour la Paroisse St Colomban
+            <div class="title-project ft-48 golos-text-bold">
+              Un site développé pour la Paroisse (par la suite)
             </div>
 
             <div
               class="flash-info"
               class="b612-mono-regular vertical-center"
-              style="position: relative; top: 0px"
+              style="position: relative; top: 48px; left: -24px"
             >
               <span> Désolée, le lien vers le site </span>
               <span>n'est pas encore disponible</span>
-              <span>Cela arrivera très prochainement </span>
             </div>
           </div>
-          <img
-            style="border-radius: 32px"
-            class="w-100 border-radius-popup"
-            src="./img/paroisse.png"
-          />
-          <div class="flex gap-24 space-between w-100 mt-24">
-            <div style="width: 90%" class="w-50 border-radius-popup">
-              <img
-                class="w-100 border-radius-popup"
-                src="./img/deuxieme-paroisse.png"
-              />
-            </div>
-            <div style="width: 18.85%" class="w-50 border-radius-popup hidden">
-              <img class="w-100 border-radius-popup" src="./img/mobile.png" />
-            </div>
-          </div>
-          <div class="mt-24 mb-24 w-96 margin-auto">
-            Pour rendre une interface moins monotone, on m'a demandé d'utiliser
-            des paysages en décor de ce site internet. Bien qu'il manque de
-            lisibilité, ce projet avec la paroisse les fait tous rêver... Ce
-            projet a duré un petit moment, durant mon baptême qui a début il y
-            maintenant 2 ans (si loin déjà!).
-          </div>
-          <div style="width: 100%" class="mt-48">
-            <div class="mobile-flex-col flex space-between mb-64 margin-auto">
-              <div class="mobile-outils flex gap-56 nowrap">
-                <div>Outils "numériques"</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Figma/Adobe
-                    XD
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Animation
-                    CSS
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-56 nowrap">
-                <div>Méthodologie</div>
-                <div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Entretiens
-                    qualitatifs
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> Prototypage
-                    Observations, personae
-                  </div>
-                  <div>
-                    <span style="margin-right: 8px"> &#9679; </span> MVP
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        style="z-index: 10"
-        class="flex w-100 absolute h-100 center vertical-center top"
-      >
-        <div style="width: 94%" class="flex space-between margin-auto hidden">
-          <!-- <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
- <rect x="1.06445" y="0.923828" width="51.4316" height="51.4316" rx="25.7158" fill="#E9E9E9" stroke="#E9E9E9"/>
- <path d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226" stroke="#1F1F1F" stroke-width="1.6"/>
- </svg> -->
-          <svg
-            class="arrow-left"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            id="paroisse_img"
+            style="box-shadow: #9696964d 0px 0px 35px 0px"
+            class="w-96 margin-auto hidden border-radius-popup mt-88"
           >
-            <rect
-              x="1.06445"
-              y="0.923828"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M40.1289 27.5562H12.9297M12.9297 27.5562L22.9293 17.5566M12.9297 27.5562L22.3961 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
+            <img class="w-100 border-radius-popup" src="./img/paroisse.png" />
+          </div>
 
-          <svg
-            class="arrow-right"
-            width="53"
-            height="53"
-            viewBox="0 0 53 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="-0.5"
-              y="0.5"
-              width="51.4316"
-              height="51.4316"
-              rx="25.7158"
-              transform="matrix(-1 0 0 1 51.4316 0.423828)"
-              fill="#1f1f1f"
-              stroke="#1f1f1f"
-            />
-            <path
-              d="M12.8672 27.5562H40.0664M40.0664 27.5562L30.0668 17.5566M40.0664 27.5562L30.6 37.0226"
-              stroke="#efefef"
-              fill="#efefef"
-              stroke-width="1.6"
-            />
-          </svg>
+          <div class="mt-88 mb-32 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span> Lorsque
+            l'on commence à  <span class="font-bold">terminer un projet </span>qui a bien "marché", on peut
+            tester de nouvelles possibilités pour tendre vers le  <span class="font-bold">CX</span>. Si l'on
+            devait comparer l'interface  <span class="font-bold">"Prille" </span>et le  <span class="font-bold">site</span>, on n'y verrait que
+            peu de point commune, la cible étant quelque peu différente. En
+            effet, ici on veut participer à <span class="font-bold"> la messe de Quimperlé</span>,
+            Clohars-Carnoët et de la côte, de <span class="font-bold"> petites villes</span> si belles qu'on se
+            croirait dans un village de provence lorsque vient l'été. Ainsi, la
+            paroisse Saint Colomban est liée à <span class="font-bold">la mer,</span> "aux grands changements
+            dans la vie des fidèles qui se ponctuent parfois d'infortune,
+            parfois d' <span class="font-bold">instants forts </span>à partager"...
+             </span>
+          </div>
+          <div class="mb-40 w-96 margin-auto ft-20 attenuate">
+            <span class="mr-8 ml-24" style="font-weight: 800"> ● </span>
+            Telle est donc la <span class="font-bold"> vision </span>que j'ai voulu mettre en avant dans un
+            <span class="font-bold"> contexte </span>compliqué qu'était la  <span class="font-bold">post-covid</span>.
+            
+            Si je devais refaire l' <span class="font-bold">interface</span>, <span class="font-bold">j'améliorerais son  accessibilité</span>
+            pour la rendre "immersive" d'une différente manière avec des
+            compétences plus évoluées dans le domaine de l'animation.
+          </div>
+
+          <div class="w-100 flex j-c-flex-end">
+            <div class="croix merci">
+              Merci ! (vous pouvez fermer par là aussi)
+            </div>
+          </div>
+          <div style="width: 100%" class="mt-96"></div>
         </div>
       </div>
+
       <div
         style="opacity: 0.25; top: 0px; z-index: -1"
         class="w-100 h-100 absolute"
@@ -835,7 +551,7 @@
               id="jade"
               class="golos-text-medium uppercase vertical-align-middle ft-12 pl-32"
             >
-              Jade P
+              <span class="ft-14">Jade</span> P
             </div>
             <div id="menu">
               <svg
@@ -866,7 +582,7 @@
             <div id="nav-wrapper">
               <div
                 id="nav-black-part"
-                class="golos-text-regular flex gap-32 bk-noir radius-24 color-background-color pl-24 pr-24 uppercase ft-12"
+                class="golos-text-regular flex gap-32 bk-noir radius-24 color-background-color pl-24 pr-24 uppercase ft-14"
               >
                 <a href="#scrollto-bonjour">Bonjour</a>
                 <a href="#scrollto-design">Design</a>
@@ -903,9 +619,25 @@
                   <img src="./img/img (6).png" />
                   <img src="./img/img (7).png" />
                   <img src="./img/img (8).png" />
+                  <img src="./img/img (1).png" />
+                  <img src="./img/img (2).png" />
+                  <img src="./img/img (3).png" />
+                  <img src="./img/img (4).png" />
+                  <img src="./img/img (5).png" />
+                  <img src="./img/img (6).png" />
+                  <img src="./img/img (7).png" />
+                  <img src="./img/img (8).png" />
                 </div>
 
                 <div class="flex gap-8 carousel">
+                  <img src="./img/img (1).png" />
+                  <img src="./img/img (2).png" />
+                  <img src="./img/img (3).png" />
+                  <img src="./img/img (4).png" />
+                  <img src="./img/img (5).png" />
+                  <img src="./img/img (6).png" />
+                  <img src="./img/img (7).png" />
+                  <img src="./img/img (8).png" />
                   <img src="./img/img (1).png" />
                   <img src="./img/img (2).png" />
                   <img src="./img/img (3).png" />
@@ -922,19 +654,19 @@
             <!-- Bonjour Titre-->
             <div id="titre" class="relative flex gap-24 pl-interieur">
               <div
-                style="line-height: 100%; color: #360404"
+                style=" color: #360404"
                 id="title-size"
                 class="uppercase judson-regular"
               >
-                Bonjour
+                portfolio
               </div>
               <div
                 id="greating-display"
                 class="uppercase flex flex-col relative b612-mono-regular ft-12"
               >
                 <span> /Jade, 21 ans </span>
-                <span> Apprentie designer </span>
-                <span> Numérique (Bac+5) </span>
+                <span> Née le 30/05/2004 </span>
+                <span> Designer (Bac+5) </span>
               </div>
             </div>
             <!-- Bonjour Titre-->
@@ -948,61 +680,85 @@
                   style="color: #130000; width: 400%; white-space: nowrap"
                   class="marquee absolute flex center golos-text-medium uppercase"
                 >
-                  <div>Portfolio 2025</div>
+                  <div>CX x Service Design</div>
                   <img src="./img/croix.png" />
 
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>3D x motion 3D</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>Coding x JS Librairies</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
 
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
                 </div>
                 <div
                   style="color: #130000; width: 400%; white-space: nowrap"
                   class="marquee absolute flex center golos-text-medium uppercase"
                 >
-                  <div>Portfolio 2025</div>
+                  <div>CX x Service Design</div>
                   <img src="./img/croix.png" />
 
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>3D x motion 3D</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>Coding x JS Librairies</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
 
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                </div>
+                <div
+                  style="color: #130000; width: 400%; white-space: nowrap"
+                  class="marquee absolute flex center golos-text-medium uppercase"
+                >
+                  <div>CX x Service Design</div>
+                  <img src="./img/croix.png" />
+
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+                  <div>3D x motion 3D</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+                  <div>Coding x JS Librairies</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
                 </div>
               </div>
             </div>
@@ -1018,14 +774,15 @@
                 class="golos-text-medium ft-32 flex flex-col mt-72 pin"
               >
                 <span style="color: #110000" id="ident"
-                  >Je m’appelle Jade et je suis ravie de vous partager
+                  >Bienvenue, je m’appelle Jade et je suis designer de
+                  formation.
                 </span>
 
-                mon savoir, mes expériences, mes évolutions tout au long de ma
-                licence (je suis actuellement en soutenance). GSAP, Barba.js,
-                les thèmes wordpress (développement PHP) sont, pour moi des
-                terrains de jeu. Je peux même intégrer des éléments 3D et opti'
-                dans une page web - vous allez voir ça !
+                Tout en étant disponible pour échanger des connaissances et de
+                nouvelles perspectives, GSAP, Barba.js et le Coding créatif
+                sont, pour moi, des domaines à explorer sans plus attendre. Ma
+                particularité : je peux intégrer de la 3D dans le web grâce à
+                mes connaisances en Three.js et Blender.
               </div>
             </div>
             <!-- Introduction -->
@@ -1036,61 +793,85 @@
                   style="color: #130000; width: 400%; white-space: nowrap"
                   class="marquee-reverse flex center golos-text-medium uppercase"
                 >
-                  <div>Portfolio 2025</div>
+                  <div>CX x Service Design</div>
                   <img src="./img/croix.png" />
 
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>3D x motion 3D</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>Coding x JS Librairies</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
 
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
                 </div>
                 <div
                   style="color: #130000; width: 400%; white-space: nowrap"
                   class="marquee-reverse flex center golos-text-medium uppercase"
                 >
-                  <div>Portfolio 2025</div>
+                  <div>CX x Service Design</div>
                   <img src="./img/croix.png" />
 
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>3D x motion 3D</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
-                  <img src="./img/croix.png" />
-                  <div>Portfolio 2025</div>
+                  <div>Coding x JS Librairies</div>
                   <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
 
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
                   <div>Portfolio 2025</div>
                   <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                </div>
+                <div
+                  style="color: #130000; width: 400%; white-space: nowrap"
+                  class="marquee-reverse flex center golos-text-medium uppercase"
+                >
+                  <div>CX x Service Design</div>
+                  <img src="./img/croix.png" />
+
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+                  <div>3D x motion 3D</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+                  <div>Coding x JS Librairies</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+
+                  <div>Empathie x UX Maps</div>
+                  <img src="./img/croix.png" />
+                  <div>Portfolio 2025</div>
+                  <img src="./img/croix.png" />
+
+                  <div class="display-none-mobile">UI/UX x Process</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
+                  <div class="display-none-mobile">Portfolio 2025</div>
+                  <img class="display-none-mobile" src="./img/croix.png" />
                 </div>
               </div>
             </div>
@@ -1101,24 +882,22 @@
               style="line-height: 145%; color: #322222"
               class="w-64 mt-80 ft-24 golos-text-medium color-gris margin-auto"
             >
-              Mais tout d'abord, parlons "scolarité". Pour mon master, j’étudie
-              à l’
+              Pourquoi je suis là ? Pour poursuivre mes études à l'
               <span style="font-weight: 600; color: #1f0505"
                 >École de Design Nantes Atlantiques</span
               >
-              pour un
+              à vos côtés vers le niveau
               <span style="font-weight: 600; color: #1f0505">Bac+5</span>. Mon
               objectif est donc de devenir votre
               <span style="font-weight: 600; color: #1f0505"> apprentie</span>
-              sur 2 ans . Oui, votre entreprise, et vous-même, n'êtes pas sur ma
-              page par hasard. Vous qui allez au-delà du design "numérique",
-              vous avez cette capacité de
+              sur 2 ans voire +. Oui, votre entreprise, et vous-même, n'êtes pas
+              sur ma page par hasard. Je crois en votre stabilité et en votre
+              succès qui nous amène à nous rencontrez. Vous
               <span style="font-weight: 600; color: #1f0505"
                 >créer un nouveau web</span
-              >. Vers un monde plus orienté vers l'UX, l'authentiticité et la
-              force de l'accessibilité... Nous pourrions continuer
+              >. Vers un monde plus orienté vers l'UX, le CX, le monde.
               <span style="font-weight: 600; color: #1f0505"
-                >notre chemin ensembles.</span
+                >Une vision commune, et un rêve pour moi.</span
               >
             </div>
             <!-- Objectif -->
@@ -1135,26 +914,49 @@
                 class="absolute opacity-0 photo"
               />
 
-              <div class="flex flex-col gap-32 j-c-flex-end">
+              <div class="flex flex-col gap-16 j-c-flex-end">
                 <div id="photo-paragraph" class="judson-regular ft-24">
-                  Si nous partageons ensemble cette vision commune, c'est parce
-                  que je suis fortement "autodidacte" par nature. Je puise
-                  constamment dans mes avancées par la lecture (comme avec
+                  Je suis toujours pleine d'entrain à l'idée de commencer un
+                  nouveau projet. A l'école, on me dit souvent que je recèle de
+                  "surprises", d'idées et que j'exploite le Design Thinking
+                  suivant ses caractéristiques (cible, gestion et acteurs du
+                  projet).
+
+                  <img
+                    id="tooki"
+                    style="height: 200px; width: auto"
+                    src="./img/Tooki.jpg"
+                    class="img-card"
+                  />
+                </div>
+                <div
+                  style="max-width: 530px; margin-top: 16px"
+                  class="uppercase ft-12 b612-mono-regular w-100"
+                >
+                  + Pour me réaliser, je lis énormément de livres... Que ce soit
+
                   <a
                     style="text-decoration: underline; color: grey"
                     class="inline-block"
                     href="https://www.editions-eyrolles.com/livre/ergonomie-web-et-ux-design-4e-edition"
-                    >ce livre</a
-                  >), les sorties et mes autres loisirs comme le dessin.
-                </div>
-                <div
-                  style="max-width: 530px"
-                  class="uppercase ft-12 b612-mono-regular w-100"
-                >
-                  /PETITE INFORMATION :: Si vous avez envie d'échanger, même si
-                  ça ne concerne que des n'hésitez pas. Je suis également au
-                  sein de l'association Kernel (design), et du Coding Creatif
-                  (de Martin Cailleau) à STEREOLUX à Nantes!
+                    >Créativité, un art de vivre</a
+                  >
+                  ,
+                  <a
+                    style="text-decoration: underline; color: grey"
+                    class="inline-block"
+                    href="https://www.editions-eyrolles.com/livre/ergonomie-web-et-ux-design-4e-edition"
+                    >Ergonomie Web & UX Design</a
+                  >
+                  ou
+                  <a
+                    style="text-decoration: underline; color: grey"
+                    class="inline-block"
+                    href="https://www.editions-eyrolles.com/livre/ergonomie-web-et-ux-design-4e-edition"
+                    >Psychologie de la couleur</a
+                  >
+                  ... J'y prends toujours autant de plaisir accompagnée de mon
+                  jeune toutou : Tooki !
                 </div>
               </div>
             </div>
@@ -1164,25 +966,24 @@
               <div class="w-100 margin-auto sous-titre-wrapper">
                 <div
                   style="margin-top: 240px"
+                  id="design-process"
                   class="sous-titre mt-part mb-part margin-auto tac"
                 >
-                  Design PROCESS
+                  Design • Exploration
                 </div>
                 <!-- Description top  -->
                 <div class="process relative">
                   <div id="num" class="ft-12 b612-mono-regular">O1</div>
 
                   <div
-                    class="presentation-desktop"
+                    class="relative presentation-desktop plr-interieur"
                     style="height: 152px"
-                    class="relative plr-interieur"
                   >
                     <div
-                      style="max-width: 28%"
-                      class="sous-titre-design-process judson-bold ft-24 txt-line relative"
+                      style="max-width: 32%"
+                      class="sous-titre-design-process golos-text-medium ft-40 txt-line relative"
                     >
-                      Présentation de ma philosophie créative (design, centres
-                      d'intérêt)
+                      Présentation d'une philosophie créative ou d'un process
                     </div>
                     <div
                       class="golos-text-regular ft-16 w-18 absolute top mt-16"
@@ -1190,13 +991,18 @@
                     >
                       Ici vous verrez quelques explorations créatives que
                       j'aborde pour alimenter mes recherches et mes réflexions.
+                      Ce sont des productions que j'ai réalisées moi-même avec
+                      du pastel sec, crayon...
                     </div>
                     <div
                       class="golos-text-regular ft-16 w-20 absolute top mt-16"
                       style="left: calc(var(--espace) * 8)"
                     >
-                      Tout n'est pas forcément en parallèle des projets mais
-                      cela me permet de diversifier ma Culture.
+                      Tout est question d'expériences et de ce que le monde a à
+                      nous offrir et de les capter pour les exploiter par la
+                      suite. Je suis celle qui a son petit carnet à idées, sa
+                      boîte à outils et à reférences pour nourrir ses projets en
+                      cours ou à venir.
                     </div>
                   </div>
                   <div
@@ -1204,39 +1010,43 @@
                     class="relative plr-interieur flex"
                   >
                     <div
-                      class="sous-titre-design-process judson-bold ft-32 txt-line mb-16"
+                      class="sous-titre-design-process golos-text-medium ft-32 txt-line mb-16"
                     >
-                      Présentation de ma philosophie créative (design, centres
-                      d'intérêt)
+                      Présentation d'une philosophie créative ou d'un process
                     </div>
                     <div class="golos-text-regular ft-18">
                       Ici vous verrez quelques explorations créatives que
                       j'aborde pour alimenter mes recherches et mes réflexions.
+                      Ce sont des productions que j'ai réalisées. Vous trouverez
+                      du pastel sec, crayon gris puis un extrait de mon carnet..
                     </div>
                     <div class="golos-text-regular ft-18 mt-8">
-                      Tout n'est pas forcément en parallèle des projets mais
-                      cela me permet de diversifier ma Culture.
+                      Tout est question d'expériences et de ce que le monde a à
+                      nous offrir et de les capter pour les exploiter par la
+                      suite. Je suis celle qui a son petit carnet à idées, sa
+                      boîte à outils et à reférences pour nourrir ses projets en
+                      cours ou à venir.
                     </div>
                   </div>
                 </div>
                 <!-- Description top  -->
                 <!-- card section -->
-                <div
-                  class="card-section w-100 mt-24 relative"
-                  style="height: 840px"
-                >
+                <div id="partie-01" class="card-section w-100 mt-80 relative">
                   <div id="p1" class="details">
-                    Il n'y a rien de plus important à mes yeux de de capturer
-                    les forces, faiblesses, enjeux d'un projet dans la phase de
-                    recherche.
+                    En utilisant figma, on peut parfois explorer des interfaces
+                    avec ses usagers pour définir la maquette prototypée
+                    rapidement ou selon ses propres moyens en utilisant
+                    l'affordance.
                   </div>
                   <div id="p2" class="details">
-                    Mon carnet me permet de faire l'inventaire de l’ existant et
-                    de l'avoir toujours sur moi.
+                    Mes recherches portent souvent sur les usagers. Je suis
+                    toujours en train de me questionner sur leur propre
+                    perception et expérience, que ce soit au travail, ou au
+                    quotidien, durant des balades.
                   </div>
 
                   <!-- template card DRAWINNNNN -->
-                  <div class="absolute h-0">
+                  <div class="absolute h-0 w-100">
                     <div style="top: 0" class="line absolute"></div>
                     <div id="dessin-rose" style="position: relative">
                       <img src="./img/Dessins.png" class="img-card w-100" />
@@ -1249,7 +1059,10 @@
                   </div>
                   <!-- template card -->
                   <!-- template card MONA LISA -->
-                  <div class="absolute h-0 mt-128 w-100">
+                  <div
+                    id="hand-drawing-wrapper"
+                    class="absolute h-0 mt-128 w-100"
+                  >
                     <div style="top: 40px" class="line absolute"></div>
                     <div id="hand-drawing" style="position: relative">
                       <img src="./img/MonaLisa.png" class="w-100" />
@@ -1258,33 +1071,54 @@
                         class="w-100 opacity-0 croquis top absolute left"
                       />
 
-                      <div class="top-right flex j-c-flex-end">
-                        <div>&#60;Novembre 2023</div>
+                      <div class="top-right flex">
+                        <div>2023</div>
                       </div>
                     </div>
                     <div style="bottom: 4px" class="line"></div>
                   </div>
+
                   <!-- template card -->
 
                   <!-- template card WIREFRAME -->
-                  <div style="margin-top: 384px" class="absolute w-100">
+
+                  <div class="absolute w-100">
                     <div style="top: 0" class="line absolute"></div>
-                    <div id="wireframe" style="position: relative">
-                      <img src="./img/wireframe.png" class="img-card w-100" />
+                    <div id="creetintel" style="position: relative">
+                      <img
+                        src="./img/profile-creetintel.png"
+                        class="img-card w-100"
+                      />
                       <div class="bottom-left flex j-c-flex-end">
-                        <div>Novembre 2024 &gt;</div>
+                        <div>Juin &gt;</div>
                       </div>
                     </div>
                     <div style="bottom: 4px" class="line"></div>
                   </div>
                   <!-- template card -->
                   <!-- template card CROQUIS -->
-                  <div style="margin-top: 206px" class="absolute w-100">
+                  <div style="margin-top: 40px" class="absolute w-100">
                     <div style="top: 0" class="line absolute"></div>
                     <div id="carnet" style="position: relative">
                       <img src="./img/carnet.png" class="img-card w-100" />
-                      <div class="top-right">
-                        <div>&#60; 1er janvier</div>
+                      <div class="top-left">
+                        <div>janvier &gt;</div>
+                      </div>
+                    </div>
+                    <div style="bottom: 4px" class="line"></div>
+                  </div>
+                  <div class="absolute w-100">
+                    <div style="top: 0" class="line absolute"></div>
+                    <div
+                      id="agence_travail"
+                      style="position: relative; overflow-x: scroll"
+                    >
+                      <img
+                        src="./img/agence_travail.jpg"
+                        class="img-card w-100"
+                      />
+                      <div class="bottom-right">
+                        <div>&#60; mai</div>
                       </div>
                     </div>
                     <div style="bottom: 4px" class="line"></div>
@@ -1304,62 +1138,60 @@
                   >
                     <div
                       style="max-width: 28%"
-                      class="sous-titre-design-process judson-bold ft-24 txt-line"
+                      class="sous-titre-design-process golos-text-medium ft-40 txt-line"
                     >
-                      Création optimisée pour le web, Modélisation, rig et
-                      animation 3D
+                      Animation 3D optimisée avec commandidaire
                     </div>
                     <div
-                      class="golos-text-regular ft-16 w-24 absolute top"
+                      class="golos-text-regular ft-16 w-24 absolute top mt-16"
                       style="left: calc(var(--espace) * 5)"
                     >
-                      Lorsque je dois utiliser de la 3D dans mes projets,
-                      j'utilise Three.js (librairie javascript) pour générer une
-                      scène sur le web / Blender.
+                      Pour un prototypage intéractif, je suis libre d'utiliser
+                      d'utiliser Three.js (librairie javascript) pour générer
+                      une scène sur le web proche de celle de Blender (son
+                      homogue logiciel).
                     </div>
                     <div
-                      class="golos-text-regular ft-16 w-16 absolute top"
+                      class="golos-text-regular ft-16 w-16 absolute top mt-16"
                       style="left: calc(var(--espace) * 9)"
                     >
                       En guise de démonstration, voici une petite "couronne" en
-                      OpenGL rien que pour vous...
+                      OpenGL avec qui vous pouvez vous amusez au curseur/touché
                     </div>
                   </div>
                   <div
                     style="height: 152px"
-                    class="relative plr-interieur presentation-mobile"
+                    class="relative presentation-mobile"
                   >
                     <div
-                      class="sous-titre-design-process judson-bold ft-32 txt-line mb-16"
+                      class="sous-titre-design-process golos-text-medium ft-32 txt-line mb-16"
                     >
-                      Création optimisée pour le web, Modélisation, rig et
-                      animation 3D
+                      Animation 3D optimisée avec commandidaire
                     </div>
                     <div class="golos-text-regular ft-18">
-                      Lorsque je dois utiliser de la 3D dans mes projets,
-                      j'utilise Three.js (librairie javascript) pour générer une
-                      scène sur le web / Blender.
+                      Pour un prototypage intéractif, je suis libre d'utiliser
+                      d'utiliser Three.js (librairie javascript) pour générer
+                      une scène sur le web proche de celle de Blender (son
+                      homogue logiciel).
                     </div>
                     <div class="golos-text-regular ft-18 mt-8">
                       En guise de démonstration, voici une petite "couronne" en
-                      OpenGL rien que pour vous...
+                      OpenGL avec qui vous pouvez vous amusez au curseur/touché
                     </div>
                   </div>
                 </div>
 
                 <!-- Description top  -->
                 <!-- card section -->
-                <div
-                  class="card-section w-100 mt-24 relative"
-                  style="height: 840px"
-                >
+                <div class="card-section w-100 mt-24 relative" id="partie-02">
                   <div id="p3" class="details">
-                    D'autres manières existent comme : faire des renderings
-                    vidéos et de les intégrer ensuite (optimisation++)
+                    Ces travaux ont été validés pour leur très bonne topologie,
+                    permettant un bon rigging et une animation dans des délais
+                    raisonnables.
                   </div>
                   <div id="p4" class="details">
-                    J'aime beaucoup les modélisations complexes voir "créatives"
-                    pour des jeux, des sites intéractifs
+                    J'ai eu à réaliser ces modèles 3D pour une application de
+                    réalité augmentée Bavar[t].
                   </div>
 
                   <!-- template card Canard-->
@@ -1388,14 +1220,14 @@
                       </div>
 
                       <div style="top: 56px" class="top-left flex j-c-flex-end">
-                        <div>Mai 2023 &gt;</div>
+                        <div>2023 &gt;</div>
                       </div>
                     </div>
                     <div style="bottom: 4px" class="line"></div>
                   </div>
                   <!-- template card -->
                   <!-- template card MONA LISA -->
-                  <div style="top: 240px" class="absolute h-0 mt-128 w-100">
+                  <div class="absolute h-0 mt-128 w-100">
                     <div style="top: 0" class="line absolute"></div>
                     <div id="canard" style="position: relative">
                       <img src="./img/Canard.png" class="img-card w-100" />
@@ -1408,12 +1240,27 @@
                   </div>
                   <!-- template card -->
                   <!-- template card MONA LISA -->
-                  <div class="absolute h-0 mt-128 w-100">
+                  <div class="absolute h-0 w-100">
                     <div style="top: 0" class="line absolute"></div>
                     <div id="croquis" class="w-100" style="position: relative">
                       <img
                         src="./img/croquis.png"
                         class="w-100 distribution fond"
+                      />
+
+                      <!-- <img src="./img/croquis.png" class="img-card w-100" /> -->
+                      <div class="top-right">
+                        <div>&#60; 2024</div>
+                      </div>
+                    </div>
+                    <div style="bottom: 4px" class="line"></div>
+                  </div>
+                  <div class="absolute h-0 w-100">
+                    <div style="top: 0" class="line absolute"></div>
+                    <div id="poire" class="w-100" style="position: relative">
+                      <img
+                        src="./img/Poire_Topologie.png"
+                        class="w-100 distribution fond img-card"
                       />
 
                       <!-- <img src="./img/croquis.png" class="img-card w-100" /> -->
@@ -1457,10 +1304,12 @@
                     style="margin-bottom: 32px"
                     class="plr-interieur-2 uppercase ft-12 b612-mono-regular mt-40"
                   >
-                    /Pour finir notre excursion - restez bien attentif jusqu'au
-                    bout car il ya du design intéractif satisfaisant en bas -
-                    Voici 4 projets qui me tiennent à coeur de vous dévoiler. Je
-                    suis déjà impatiente de pouvoir en discuter avec vous.
+                    /Participant à de nouvelles activités de programmation, je
+                    créée et je m'inspire grâce au groupe de Coding Creatif à
+                    STEREOLUX qui introduit une multitude de formes artistiques
+                    avec le dev. J'aime également l'association Kernel, de
+                    designers passionnés, qui me manque déjà suite aux examens !
+                    (Bisous à eux !)
                   </div>
 
                   <!-- 4 projets + 1 en space-between -->
@@ -1471,95 +1320,208 @@
                     <!-- 4 projets -->
                     <div class="flex flex-col gap-32 w-80">
                       <!-- 2 projets -->
-
-                      <div class="projet" id="2">
-                        <div class="height-project w-100 flex space-between">
-                          <div class="ft-12 golos-text-medium header"></div>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 22 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
-                              stroke="#323232"
-                              stroke-width="1.4"
-                            />
-                          </svg>
+                      <div class="relative project-showroom">
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            left: -28%;
+                            top: -32px;
+                            width: 200px;
+                            height: auto;
+                          "
+                          src="./img/1-tooki.png"
+                        />
+                        <img
+                          class="tooki-showroom absolute"
+                          style="right: -24%; top: -40px"
+                          src="./img/3-tooki.png"
+                        />
+                        <div class="project-wrap">
+                          <div class="projet" id="2">
+                            <div
+                              class="height-project w-100 flex space-between"
+                            >
+                              <div class="ft-12 golos-text-medium header"></div>
+                              <svg
+                                class="triangle"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
+                                  stroke="#323232"
+                                  stroke-width="1.4"
+                                />
+                              </svg>
+                            </div>
+                            <div class="project-title">AXEO : Crm Original</div>
+                          </div>
                         </div>
-                        <div class="project-title">AXEO : Crm Original</div>
                       </div>
-                      <div class="projet" id="3">
-                        <div class="height-project w-100 flex space-between">
-                          <div class="ft-12 golos-text-medium header"></div>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 22 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
-                              stroke="#323232"
-                              stroke-width="1.4"
-                            />
-                          </svg>
+                      <div class="relative project-showroom">
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            left: -224px;
+                            top: -72px;
+                            width: 192px;
+                            height: auto;
+                          "
+                          src="./img/5-tooki.png"
+                        />
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            right: -232px;
+                            top: -72px;
+                            width: 204px;
+                            height: auto;
+                          "
+                          src="./img/6-tooki.png"
+                        />
+                        <div class="project-wrap">
+                          <div class="projet" id="3">
+                            <div
+                              class="height-project w-100 flex space-between"
+                            >
+                              <div class="ft-12 golos-text-medium header"></div>
+                              <svg
+                                class="triangle"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
+                                  stroke="#323232"
+                                  stroke-width="1.4"
+                                />
+                              </svg>
+                            </div>
+                            <div class="project-title">
+                              Site internet pour la Paroisse St Colomban
+                            </div>
+                          </div>
                         </div>
-                        <div class="project-title">
-                          Site internet pour la Paroisse St Colomban
+                      </div>
+                      <div class="relative project-showroom">
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            left: -32%;
+                            top: -40px;
+                            width: 200px;
+                            height: auto;
+                          "
+                          src="./img/8-tooki.png"
+                        />
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            right: -32%;
+                            top: -32px;
+                            width: 208px;
+                            height: auto;
+                          "
+                          src="./img/4-tooki.png"
+                        />
+                        <div class="project-wrap">
+                          <div class="projet" id="4">
+                            <div
+                              class="height-project w-100 flex space-between"
+                            >
+                              <div class="ft-12 golos-text-medium header"></div>
+                              <svg
+                                class="triangle"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
+                                  stroke="#323232"
+                                  stroke-width="1.4"
+                                />
+                              </svg>
+                            </div>
+                            <div class="project-title">
+                              Application "Prille" (PHP Wordpress)
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="relative project-showroom">
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            left: -256px;
+                            top: -64px;
+                            width: 200px;
+                            height: auto;
+                          "
+                          src="./img/7-tooki.png"
+                        />
+                        <img
+                          class="tooki-showroom absolute"
+                          style="
+                            right: -260px;
+                            top: -78px;
+                            width: 200px;
+                            height: auto;
+                          "
+                          src="./img/2-tooki.png"
+                        />
+                        <div class="project-wrap">
+                          <div class="projet" id="5">
+                            <div class="height-project w-100 flex j-c-flex-end">
+                              <svg
+                                class="triangle"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 22 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
+                                  stroke="#323232"
+                                  stroke-width="1.4"
+                                />
+                              </svg>
+                            </div>
+                            <div class="project-title">AXEO : Projet Final</div>
+                          </div>
                         </div>
                       </div>
 
                       <!-- 2 projets -->
                       <!-- 2 Projets -->
 
-                      <div class="projet" id="4">
-                        <div class="height-project w-100 flex space-between">
-                          <div class="ft-12 golos-text-medium header"></div>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 22 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
-                              stroke="#323232"
-                              stroke-width="1.4"
-                            />
-                          </svg>
-                        </div>
-                        <div class="project-title">
-                          Application "Prille" (PHP Wordpress)
-                        </div>
-                      </div>
-                      <div class="projet" id="5">
-                        <div class="height-project w-100 flex space-between">
-                          <div class="ft-12 header">Hello</div>
-                          <svg
-                            width="22"
-                            height="22"
-                            viewBox="0 0 22 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M13.2544 16.8718L4.84158 8.45898L14.8074 6.90528L13.2544 16.8718Z"
-                              stroke="#323232"
-                              stroke-width="1.4"
-                            />
-                          </svg>
-                        </div>
-                        <div class="project-title">AXEO : Projet Final</div>
-                      </div>
-
                       <!-- 2 projets -->
                     </div>
                     <!-- 4 projets -->
+                  </div>
+
+                  <div
+                    id="info-dog"
+                    style="margin-bottom: 48px"
+                    class="plr-interieur-2 uppercase ft-12 b612-mono-regular mt-40"
+                  >
+                    /Mon chien est un Coton de Tuléar, une race issue tout droit
+                    de madagascar (un peu comme moi). Il me ressemble
+                    énormément, il est "drôle", attentif, joyeu, un peu fou-fou
+                    parfois aussi... Mais surtout, il est rempli d'amour et de
+                    joie à chaque fois qu'il découvre quelque chose de nouveau !
+                    Alors, dites-moi, est-ce que vous m'avez retrouvée dans ses
+                    bêtises ?
                   </div>
                   <!-- 4 projets + 1 en space-between -->
                   <!-- Info -->
@@ -1573,36 +1535,29 @@
 
               <!-- skills et compétences -->
 
-              <div
-                id="petit-mot"
-                style="margin-top: 408px"
-                class="w-100 sous-titre-wrapper mt-80"
-              >
+              <div id="petit-mot" class="w-100 sous-titre-wrapper mt-80">
                 <div class="mt-part mb-part margin-auto tac"></div>
                 <div
                   style="letter-spacing: -0.8px"
                   class="ft-24 last-one flex flex-col golos-text-medium margin-auto"
                 >
                   <span class="relative pl-48 two-hands-on-me">
-                    Mes compétences, bien qu’elles pourraient se confronter à
-                    l’IA pour la 3D,
+                    J'adore les projets de design mais surtout me projeter
                   </span>
-                  est créée pour l’optimisation. Je suis touche-à-tout mais
-                  aussi concentrée sur le design que sur la communication au
-                  sein d’une équipe.
+                  avec une équipe de design pour continuer à poursuivre ma
+                  passion.
                 </div>
                 <div
                   style="letter-spacing: -0.8px"
                   class="last-one flex flex-col golos-text-medium ft-24 margin-auto"
                 >
                   <span class="relative pl-48 two-hands-on-me">
-                    Le dessin, le dev et la création de sites internet sont mes
-                    trois passions.
+                    Si durant ce petit "parcours" vous avez été amené à être
+                    surpris(e),
                   </span>
-                  Mais le développement de toutes mes compétences se doit d’être
-                  coordonnées par l’UX design et l’UI. Je suis très heureuse de
-                  faire ce que je fais aujourd’hui et j’espère que vous verrez
-                  toute ma “passion” et ma considération pour le numérique
+                  J'espère que vous avez pu ressentir ma motivation à me joindre
+                  à vos côtés afin de vous partager d'avantage de mes projets,
+                  de mon humour et de ma personne.
                 </div>
                 <div
                   style="letter-spacing: -2.4px"
@@ -1612,7 +1567,7 @@
                 </div>
               </div>
 
-              <div style="height: 766px" id="fin" class="w-100 mb-48">
+              <div id="fin" class="w-100 mb-48 vertical-center">
                 <div
                   class="flex flex-col w-100 center vertical-center absolute judson-bold"
                 >
@@ -1621,96 +1576,160 @@
                     class="ft-24"
                     id="meContacter"
                   >
-                    Merci d'être arrivé jusqu'ici. Si vous souhaitez me
-                    contacez, voici mon mail
-                    <a
-                      style="
-                        text-decoration: underline;
-                        font-family: judson;
-                        font-weight: 800;
-
-                        display: block;
-                        white-space: nowrap;
-                        text-align: center;
-                      "
-                      href="mailto:jade.peresson@gmail.com"
-                      >jade.peresson@gmail.com</a
+                    Merci d'être arrivé(e) jusqu'ici. Si vous souhaitez me
+                    contacter, voici mon mail
+                    <div
+                      style="margin-bottom: 2px"
+                      class="w-100 flex center vertical-center"
                     >
-                    <span> et mon numéro de téléphone</span>
+                      <a
+                        style="
+                          text-decoration: underline;
+                          font-family: judson;
+                          font-weight: 800;
+
+                          display: inline-block;
+                          white-space: nowrap;
+                          text-align: center;
+                        "
+                        href="mailto:jade.peresson@gmail.com"
+                      >
+                        <div id="mail-clipboard">
+                          jade.peresson@gmail.com
+                        </div></a
+                      >
+                      <svg
+                        id="mail_clipboard_icon"
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="
+                          position: relative;
+                          top: 2px;
+                          left: 6px;
+                          padding: 2px;
+                        "
+                      >
+                        <path
+                          d="M6 11C6 8.17157 6 6.75736 6.87868 5.87868C7.75736 5 9.17157 5 12 5H15C17.8284 5 19.2426 5 20.1213 5.87868C21 6.75736 21 8.17157 21 11V16C21 18.8284 21 20.2426 20.1213 21.1213C19.2426 22 17.8284 22 15 22H12C9.17157 22 7.75736 22 6.87868 21.1213C6 20.2426 6 18.8284 6 16V11Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M6 19C4.34315 19 3 17.6569 3 16V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H15C16.6569 2 18 3.34315 18 5"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span> et mon numéro de portable</span>
 
                     <span style="display: block">07. 88. 85. 02. 55.</span>
-                    <div id="a-tres-bientot">À très bientôt !</div>
+                    <div id="a-tres-bientot">À Bientôt !</div>
                   </div>
                 </div>
 
                 <!-- Marquee -->
+
                 <div id="bottom-work" class="relative w-100 hidden trigger">
+                  <div class="flex w-100 vertical-center mb-24">
+                    <div class="ml-8 ft-12">
+                      <!-- Dernière mise à jour : 26/06/2025 -->
+                    </div>
+                    <div class="mr-8 ft-12">@ 2025-J-peresson</div>
+                  </div>
                   <div class="flex">
                     <div
                       style="color: #130000; width: 400%; white-space: nowrap"
-                      class="marquee-reverse flex center golos-text-medium uppercase"
+                      class="marquee absolute flex center golos-text-medium uppercase"
                     >
-                      <div>Portfolio 2025</div>
+                      <div>CX x Service Design</div>
                       <img src="./img/croix.png" />
 
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
+                      <div>3D x motion 3D</div>
                       <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
+                      <div>Coding x JS Librairies</div>
                       <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
 
+                      <div>Empathie x UX Maps</div>
+                      <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
+
+                      <div class="display-none-mobile">UI/UX x Process</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
+                      <div class="display-none-mobile">Portfolio 2025</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
                     </div>
                     <div
                       style="color: #130000; width: 400%; white-space: nowrap"
-                      class="marquee-reverse flex center golos-text-medium uppercase"
+                      class="marquee absolute flex center golos-text-medium uppercase"
                     >
-                      <div>Portfolio 2025</div>
+                      <div>CX x Service Design</div>
                       <img src="./img/croix.png" />
 
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
+                      <div>3D x motion 3D</div>
                       <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
-                      <img src="./img/croix.png" />
-                      <div>Portfolio 2025</div>
+                      <div>Coding x JS Librairies</div>
                       <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
 
+                      <div>Empathie x UX Maps</div>
+                      <img src="./img/croix.png" />
                       <div>Portfolio 2025</div>
                       <img src="./img/croix.png" />
+
+                      <div class="display-none-mobile">UI/UX x Process</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
+                      <div class="display-none-mobile">Portfolio 2025</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
+                    </div>
+                    <div
+                      style="color: #130000; width: 400%; white-space: nowrap"
+                      class="marquee absolute flex center golos-text-medium uppercase"
+                    >
+                      <div>CX x Service Design</div>
+                      <img src="./img/croix.png" />
+
+                      <div>Portfolio 2025</div>
+                      <img src="./img/croix.png" />
+                      <div>3D x motion 3D</div>
+                      <img src="./img/croix.png" />
+                      <div>Portfolio 2025</div>
+                      <img src="./img/croix.png" />
+                      <div>Coding x JS Librairies</div>
+                      <img src="./img/croix.png" />
+                      <div>Portfolio 2025</div>
+                      <img src="./img/croix.png" />
+
+                      <div>Empathie x UX Maps</div>
+                      <img src="./img/croix.png" />
+                      <div>Portfolio 2025</div>
+                      <img src="./img/croix.png" />
+
+                      <div class="display-none-mobile">UI/UX x Process</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
+                      <div class="display-none-mobile">Portfolio 2025</div>
+                      <img class="display-none-mobile" src="./img/croix.png" />
                     </div>
                   </div>
                 </div>
                 <!-- Marquee -->
               </div>
-              <div id="scrollto-contact"></div>
+              <div class="mt-88" id="scrollto-contact"></div>
             </div>
           </div>
         </div>
@@ -1725,12 +1744,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-    <!-- <script type="module" src="./test.js"></script> -->
-    <!-- <script src="./src/p5.min.js"></script> -->
     
-    <!-- <script type="module" src="./src/circle.js"></script> -->
-    <!-- <script type="module" src="./src/particle.js"></script> -->
-    <!-- ScrollSmoother requires ScrollTrigger -->
+
     
 
     
