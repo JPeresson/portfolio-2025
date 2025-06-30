@@ -1,3 +1,7 @@
+/* préfixé ici :
+https://autoprefixer.github.io/fr/
+*/
+
 :root {
   --background-color: #e2e2e2;
   --blck: #222222;
@@ -8,6 +12,8 @@
 }
 
 .a-i-flex-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -155,26 +161,39 @@
 }
 
 .a-i-flex-end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .j-c-flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 .center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .vertical-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .txt-popup {
@@ -199,6 +218,8 @@
 }
 
 .j-c-flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -207,6 +228,8 @@
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -311,6 +334,8 @@
   font-size: 32px;
   line-height: 110%;
   padding: 8px 8px 24px 16px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   height: 104px;
 }
@@ -528,11 +553,20 @@ video::-webkit-media-controls-current-time-display {
 .project-wrap {
   padding: 1px;
   background: var(--background-color);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 8px;
 }
 
 .project-wrap:hover {
+  background: -o-linear-gradient(
+    330deg,
+    rgb(119, 201, 142),
+    rgba(219, 187, 44, 0.74),
+    rgba(99, 98, 190, 0.95),
+    rgb(186, 81, 81)
+  );
   background: linear-gradient(
     120deg,
     rgb(119, 201, 142),
@@ -554,6 +588,8 @@ video::-webkit-media-controls-current-time-display {
 nav a {
   color: var(--background-color0);
   opacity: 1;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -699,14 +735,17 @@ nav a:hover {
 }
 
 .marquee {
+  -webkit-animation: move_marquee 32s linear infinite;
   animation: move_marquee 32s linear infinite;
 }
 
 .carousel {
+  -webkit-animation: move_marquee_left_to_right 64s linear infinite;
   animation: move_marquee_left_to_right 64s linear infinite;
 }
 
 .marquee-reverse {
+  -webkit-animation: 32s linear infinite move_marquee_left_to_right;
   animation: 32s linear infinite move_marquee_left_to_right;
 }
 
@@ -732,6 +771,8 @@ nav a:hover {
 
 #fin {
   /* background-color: #222222; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-bottom: 120px;
@@ -766,6 +807,8 @@ nav a:hover {
 }
 
 #mail_clipboard_icon {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -845,6 +888,8 @@ nav a:hover {
 
   .projet {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
 
@@ -902,6 +947,9 @@ nav a:hover {
   }
 
   .mobile-flex-ml-0 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 0;
   }
@@ -986,6 +1034,9 @@ nav a:hover {
   }
 
   #titre {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
     left: 8px;
@@ -1029,6 +1080,9 @@ nav a:hover {
 
   #photoshoot {
     /* width: 100%; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1206,14 +1260,17 @@ nav a:hover {
   }
 
   .marquee {
+    -webkit-animation: move_marquee 64s linear infinite;
     animation: move_marquee 64s linear infinite;
   }
 
   .carousel {
+    -webkit-animation: move_marquee_left_to_right 128s linear infinite;
     animation: move_marquee_left_to_right 128s linear infinite;
   }
 
   .marquee-reverse {
+    -webkit-animation: 64s linear infinite move_marquee_left_to_right;
     animation: 64s linear infinite move_marquee_left_to_right;
   }
 

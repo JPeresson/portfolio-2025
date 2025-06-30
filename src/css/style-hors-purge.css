@@ -9,6 +9,7 @@
 }
 
 .saturate {
+  -webkit-filter: saturate(1) !important;
   filter: saturate(1) !important;
 }
 
